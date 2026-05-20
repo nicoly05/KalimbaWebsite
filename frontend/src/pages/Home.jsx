@@ -8,10 +8,10 @@ const fade = (delay = 0) => ({
 })
 
 const materias = [
-  { titulo: "Design Thinking", desc: "Aplicamos metodologias criativas para resolver problemas de moda com tecnologia.", obj: "Prototipagem e empatia com o usuário" },
-  { titulo: "Programação Web", desc: "Desenvolvimento do site, integração de APIs e criação de interfaces modernas.", obj: "Frontend e backend integrados" },
-  { titulo: "Inteligência Artificial", desc: "Uso de IA generativa para criação de looks, paletas e referências visuais.", obj: "Prompting e modelos de visão" },
-  { titulo: "Marketing Digital", desc: "Identidade visual, branding e posicionamento do projeto no mercado fashion.", obj: "Presença digital e storytelling" },
+  { titulo: "Design Interface & Interaction Design", desc: "The kalimba is used as an interface because it is intuitive and accessible—anyone can touch it and produce a sound immediately, illustrating the concept of affordance. Real-time visual feedback (each key activates a visual column) creates an interaction loop that is central to interaction design. The system also responds to the character of the touch, not just the note, making each experience personal and aligned with the UX goal of emotionally resonating with the user." },
+  { titulo: "Artificial Intelligence — Generative", desc: "The system's generative layer captures the frequencies and the way each person plays (intensity, rhythm, harmonic character) and uses this information to generate real-time audio and visual feedback. Each performance produces a unique and unrepeatable audiovisual composition, making AI an extension of the user's individual expression."},
+  { titulo: "Artificial Intelligence — Deep Learning", desc: "The neural network is trained with short recordings of sinusoidal waves at random frequencies, analyzed using the Python Essentia library. Each sample is described by features such as MFCC (Mel Frequency Cepstral Coefficients) — 13 coefficients that represent the timbre of the sound in a way that closely resembles human perception — returned as mean and variance over time. This process teaches the network to recognize and classify the sound patterns produced by the instrument."},
+  { titulo: "Emergent Technologies", desc: "The project applies Augmented Reality principles to dissolve the separation between the physical and digital worlds: the generated visuals don't appear on a separate screen, but seem to be part of the garment itself. The t-shirt becomes an interface, the body becomes part of the system. The combination of AR, generative AI, real-time audio analysis, and wearables positions the project at the forefront of future interfaces—which will live in objects and bodies, not on screens."},
 ]
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
           TONE POEM
         </motion.h1>
         <motion.p {...fade(0.6)} className="text-white/50 text-lg max-w-xl mb-10 font-light leading-relaxed">
-          Onde a inteligência artificial encontra a linguagem da moda — criando o futuro da expressão visual.
+Where artificial intelligence meets the language of fashion — creating the future of visual expression.
         </motion.p>
 
         <motion.div
@@ -49,16 +49,16 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <p className="text-brightBlue text-xs tracking-[0.4em] uppercase mb-4">Sobre o Projeto</p>
+          <p className="text-brightBlue text-xs tracking-[0.4em] uppercase mb-4">About the project</p>
           <h2 className="text-4xl font-light text-white mb-8 leading-snug">
-            Kalimba é a fusão entre<br />
-            <span className="text-brightBlue">criatividade e código</span>
+            Tone Poem is the merger of<br />
+            <span className="text-brightBlue">creativity, sound and technology</span>
           </h2>
           <p className="text-white/50 leading-relaxed text-lg font-light">
-            Nascido na interseção entre tecnologia e moda, o Kalimba é um projeto que utiliza
-            inteligência artificial para reimaginar o processo criativo no universo fashion.
-            Nossa intenção é democratizar a criação visual e conectar estudantes, designers
-            e entusiastas a ferramentas que ampliam sua visão estética.
+            Born at the intersection of technology and fashion, Tone Poem is a project that uses
+            artificial intelligence to reimagine the creative process in the fashion universe.
+            Our intention is to democratize visual creation and connect students, designers
+            and enthusiasts to tools that broaden their aesthetic vision.
           </p>
         </motion.div>
       </section>
@@ -72,8 +72,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <p className="text-brightBlue text-xs tracking-[0.4em] uppercase mb-3">Aplicação</p>
-            <h2 className="text-3xl font-light text-white">Nas Matérias</h2>
+            <p className="text-brightBlue text-xs tracking-[0.4em] uppercase mb-3">Aplications</p>
+            <h2 className="text-3xl font-light text-white">In the Subjects</h2>
           </motion.div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
             {materias.map((m, i) => (
@@ -103,12 +103,12 @@ export default function Home() {
           viewport={{ once: true }}
           transition={{ duration: 0.9 }}
         >
-          <p className="text-brightBlue text-xs tracking-[0.4em] uppercase mb-4">Visão</p>
-          <h2 className="text-3xl font-light text-white mb-8">O Futuro que Construímos</h2>
+          <p className="text-brightBlue text-xs tracking-[0.4em] uppercase mb-4">Vision</p>
+          <h2 className="text-3xl font-light text-white mb-8">The Future We Build</h2>
           <p className="text-white/50 leading-loose text-lg font-light">
-            Kalimba não é apenas um projeto acadêmico — é uma declaração criativa. Acreditamos
-            que a IA pode ser o próximo grande instrumento do designer de moda: capaz de gerar
-            referências visuais, harmonizar paletas, sugerir silhuetas e criar conceitos
+            Kalimba is not just an academic project — it is a creative declaration. We believe
+            that AI can be the next great instrument for fashion designers: capable of generating
+            visual references, harmonizing palettes, suggesting silhouettes, and creating complete concepts
             completos em segundos. O impacto é tanto tecnológico quanto estético.
           </p>
           <br></br>
@@ -116,7 +116,7 @@ export default function Home() {
             to="/examples"
             className="border border-brightBlue text-brightBlue px-10 py-3 text-xs tracking-[0.3em] uppercase hover:bg-brightBlue hover:text-darkBlue transition-all duration-500"
           >
-            Explore Possibilities
+            Explore Real Results
           </Link>
         </motion.div>
       </section>

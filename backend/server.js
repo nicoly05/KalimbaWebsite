@@ -89,16 +89,10 @@ if (fs.existsSync(WATCH_DIR)) {
 
 // ─── Rotas ────────────────────────────────────────────────────────────────
 
-// GET /api/imagens — lista inicial (sempre a última imagem)
+// GET /api/imagens — lista inicial (todas as imagens kalimba_wave_)
 app.get("/api/imagens", (req, res) => {
   const imagens = listarImagens()
-  
-  // Sempre mostrar apenas a última imagem
-  if (imagens.length > 0) {
-    res.json([imagens[0]])
-  } else {
-    res.json([])
-  }
+  res.json(imagens)
 })
 
 // GET /api/imagens/ultima — só a mais recente
